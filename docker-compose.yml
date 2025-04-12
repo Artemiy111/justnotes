@@ -1,6 +1,17 @@
 
 services:
-  app:
+  frontend:
     build: .
     ports:
-      - 81:81
+      - "81"  # Открываем порт только для внутренней сети
+    deploy:
+      replicas: 3  # Создаст 3 идентичных контейнера
+
+  load_balancer:
+    image: nginx:alpine
+    ports:
+      - "8080:81" 
+    volumes:
+      - ./.nginx/load_balancer.conf:/etc/nginx/nginx.conf 
+    depends_on:
+      - frontend

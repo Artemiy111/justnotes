@@ -47,7 +47,7 @@ watch(
 
 <template>
   <main class="mx-auto w-md mt-10">
-    <h1 class="font-bold text-3xl">Simplenotes</h1>
+    <h1 class="font-bold text-3xl">Justnotes</h1>
     <div v-if="status === 'loading'" class="mt-8">Loading...</div>
     <div v-if="status === 'error'" class="mt-8 text-red-500">Error</div>
     <ul class="flex flex-col gap-4 mt-8">
