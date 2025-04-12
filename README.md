@@ -1,15 +1,20 @@
-# Launch
+# About
 
-port 81
+- just notes with localstorage
+- load balancer on nginx with 3 replicas
 
-## Dev
+## Launch
+
+watch on port 81
+
+### Dev
 
 ```bash
 bun i
 bun run dev
 ```
 
-## Build
+### Build
 
 ```bash
 docker compose up --build
