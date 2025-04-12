@@ -14,7 +14,7 @@ bun i
 bun run dev
 ```
 
-### Build
+### Prod
 
 ```bash
 docker compose up --build
