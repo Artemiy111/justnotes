@@ -5,8 +5,6 @@
 
 ## Launch
 
-watch on port 81
-
 ### Dev
 
 ```bash
@@ -15,6 +13,8 @@ bun run dev
 ```
 
 ### Prod
+
+watch on port 81
 
 ```bash
 docker compose up --build
